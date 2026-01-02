@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home Page -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Learn Page -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/learn.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- How to Create a Website -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/howto-createawebsite.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- How to Host a Website on GitHub -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/howtohost-github.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- How to Host a Website Using M-Pesa -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/howtohosta-website.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Free Templates -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/freetemplates.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Make Money Online -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/makemoney.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/private-policy.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Terms & Conditions -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/terms-and-conditions.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Affiliate Disclosure -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/affiliate-disclosure.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Web Development Roadmap -->
+    <url>
+        <loc>https://brightminds-learn.vercel.app/pages/web-devroadmap.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
