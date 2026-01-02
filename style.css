@@ -1,0 +1,1644 @@
+/* Google Fonts (Inter)*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset default CSS styles*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 1200px;
+    /* line-height: 1.6; */
+    background: white;
+    font-size: 16px;
+}
+
+/* Ensuring Everything Uses Inter As font*/
+body, h1, h2, h3, h4, h5, h6, p, a, li, button, input, label, textarea, select, option {
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    line-height: 1.3;
+}
+
+/* Getting Started*/
+
+.header {
+    position: relative;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 5px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('images/home-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background 0.3s ease;
+}
+
+.header .navs{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    padding: 5px;
+    margin: 0 10px;
+    max-width: 1200px;
+    z-index: 2;
+}
+
+.header .navs ul{
+    display: flex;
+    gap:10px;
+}
+
+.header .navs ul li{
+    list-style: none;
+}
+
+.header .navs ul li a{
+    text-decoration: none;
+    color: #3b00db;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header .navs img{
+    width: 25px;
+}
+
+/* Styling TRUEHOST link*/
+.header .navs ul li .truehost{
+    color: orange;
+    border: 2px solid orangered;
+    padding: 4px 7px;
+    border-radius: 30px;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+.start-learning-container .start-learning{
+    position: absolute;
+    bottom: 10px;   
+    padding: 10px 30px;    
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.start-learning:hover{
+    background-color: white;
+    color: #f66435;/*orangeRed*/
+}
+
+/* ------- Main Section ------- */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Useful link top*/
+
+.main .section-one h3{
+    margin: 30px;
+    text-align: center;
+}
+
+/* USEFUL LINKS STYLES*/
+details {
+    width: 300px;
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.5em;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Remove default arrow */
+details summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    padding-left: 1.5em;
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Custom icon */
+details summary::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon when open */
+details[open] summary::before {
+    content: "−";
+    transform: rotate(180deg);
+}
+
+/* Smooth reveal */
+details p {
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 35px;
+    transition: max-height 0.4s ease;
+}
+details[open] p {
+    max-height: 200px; /* adjust depending on c ontent */
+}
+
+/* Useful Links grid*/
+.main .section-one .useful-links{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* useful-link-get-start-btn */
+
+.main .section-one a{
+    text-decoration: none;
+}
+
+.main .section-one .useful-link-get-start-btn{
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    background: #f66435;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+    align-self: center;
+    bottom: 8px;
+    
+}
+
+/* Scroll behavior to sections*/
+.main .learn{
+    scroll-margin-top: 50px;
+}
+
+.main .learn h3{
+    text-align: center;
+    margin: 20px auto 10px;
+}
+
+/* cards */
+
+.main .cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    align-self: center;
+    
+}
+
+/* card number */
+.main .cards .reasons .number{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #3b00db;
+    background-color: white;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main .cards .reasons{
+    position: relative;
+    background: linear-gradient(135deg, #3b00db, #007fff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 30px 8px 10px;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    width: 90%;
+    
+}
+
+.main .cards .reasons.two{
+    background: linear-gradient(-135deg, #3b00db, #007fff);
+}
+
+.main .cards .reasons.three{
+    background: linear-gradient(50deg, #3b00db, #007fff);
+}
+
+.main .cards .reasons.four{
+    background: linear-gradient(190deg, #3b00db, #007fff);
+}
+
+.main .cards .reasons h4{
+    text-align: center;
+} 
+
+
+/*------- Learn Now CTA Section -------*/
+.main .learn-now{
+    background-color: #f66435;/*orange-Red*/
+    color: white;
+    text-align: center;
+    margin: 30px 10px;
+    padding: 40px 5px;
+    border-radius: 20px;
+}
+
+.main .learn-now h2{
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+.main .learn-now button{
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f66435;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main .learn-now button:hover{
+    transform: translateY(-1.7px);
+}
+
+/* Best Web Hosting in Kenya (2026 Review) */
+.main .web-hosting-in-kenya{
+    scroll-margin-top: 50px;
+    margin: 40px 0;
+}
+
+.main .web-hosting-in-kenya .web-hosting-detailes{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .web-hosting-in-kenya .web-hosting-detailes img{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.main .web-hosting-in-kenya .web-hosting-detailes-paragraph{
+    margin: 0 10px;
+}
+
+.main .web-hosting-in-kenya h4{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main .web-hosting-in-kenya table{
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+main .web-hosting-in-kenya table th{
+    text-align: left;
+    padding-left: 5px;
+}
+
+.main .web-hosting-in-kenya table p{
+    margin: 0 5px;
+}
+
+.main .web-hosting-in-kenya table .green-bg{    
+    color: green;   
+}
+.main .web-hosting-in-kenya table .red-bg{
+    color: red;
+}
+
+/* hosting-features */
+.main .web-hosting-in-kenya .hosting-features{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.main .web-hosting-in-kenya .hosting-features{
+    
+}
+
+.main .web-hosting-in-kenya .hosting-features {
+    margin: 10px 20px 10px;
+}
+
+.main .web-hosting-in-kenya .hosting-features h4{
+    margin: 40px auto 10px;
+}
+
+
+.main .web-hosting-in-kenya .hosting-features img{
+    width: 100%;
+}
+
+.main .web-hosting-in-kenya .hosting-features ul{
+    margin: 0 10px;
+}
+
+.main .web-hosting-in-kenya .hosting-features .truehost-get-started-link{
+    background-color: #f66435;/*orangeRed*/;
+    color: white;
+    padding:60px 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.main .web-hosting-in-kenya .hosting-features .truehost-get-started-link h1{
+    text-align: center;
+    font-size: 24px;
+}
+
+.main .web-hosting-in-kenya .hosting-features .truehost-get-started-link button {
+    padding: 10px 40px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    color: #f66435;/*orangeRed*/
+    font-size: 22px;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+/* affiliate link statement styles*/
+.affiliate-link-statement {
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 12px 16px;
+    background: #f5f7fa;
+    border-left: 7px solid #3b00db;        
+    color: #555;
+    max-width: 600px;
+    margin: 10px;
+    box-shadow: 0 0 13px rgb(0,0,0,0.3);
+}
+
+.affiliate-link-statement p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.affiliate-link-statement a {
+    color: #007fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.affiliate-link-statement a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FAQ SECTION - FIXED RESPONSIVE
+   ========================= */
+
+.faq-section {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    padding: 50px 16px;
+}
+
+.faq-container {
+    width: 100%;
+    max-width: 100%; /* allow full width on mobile */
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+/* Section Title */
+.faq-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3b00db;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.faq-subtitle {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* FAQ List */
+.faq-list details {
+    width: 100%; /* ensure full width */
+    background-color: #f5f7fa;
+    border-left: 4px solid #007fff;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.faq-list details[open] {
+    border-left-color: #f66435;
+    background-color: #eef3ff;
+}
+
+.faq-list summary {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000;
+    list-style: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none; /* remove default arrow */
+}
+
+/* Custom arrow */
+.faq-list summary::after {
+    content: "▸";
+    transition: transform 0.3s ease;
+}
+
+.faq-list details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+/* Answer content */
+.faq-list p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* MOBILE-FIRST media query adjustments */
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 40px 12px;
+    }
+
+    .faq-title {
+        font-size: 1.6rem;
+    }
+
+    .faq-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .faq-list summary {
+        font-size: 0.95rem;
+    }
+
+    .faq-list p {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* =========================
+   PARTNERS SECTION (MOBILE)
+   ========================= */
+
+.partners-section {
+    padding: 50px 16px;
+    background-color: #fff;
+}
+
+.partners-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.partners-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.partners-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3b00db;
+    margin-bottom: 12px;
+}
+
+.partners-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* Grid */
+.partners-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Card */
+.partner-card {
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* Card variations */
+.partner-owner {
+    border-left: 4px solid #3b00db;
+}
+
+.partner-affiliate {
+    border-left: 4px solid #f66435;
+}
+
+.partner-platform,
+.partner-resource,
+.partner-ai {
+    border-left: 4px solid #007fff;
+}
+
+/* Card text */
+.partner-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.partner-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Badge */
+.partner-badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #f66435;
+    border-radius: 20px;
+}
+
+/* Disclaimer */
+.partners-disclaimer {
+    margin-top: 32px;
+    padding: 14px 16px;
+    background-color: #f5f7fa;
+    border-left: 4px solid #007fff;
+    border-radius: 6px;
+}
+
+.disclaimer-text {
+    font-size: 0.8rem;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+
+/* =========================
+   SUPPORT US SECTION
+   ========================= */
+
+.support-section {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    padding: 60px 16px;
+}
+
+.support-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Section Header */
+.support-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.support-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3b00db;
+    margin-bottom: 12px;
+}
+
+.support-header p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Support Options */
+.support-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cards */
+.support-card {
+    background-color: #f5f7fa;
+    border-left: 4px solid #007fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.support-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* Card Icon */
+.partner-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+/* Card Titles */
+.support-card h3 {
+    font-size: 1.2rem;
+    color: #f66435;
+    margin-bottom: 8px;
+}
+
+/* Card Text */
+.support-card p {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+/* Buttons */
+.support-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Colors */
+.mpesa-btn {
+    background-color: #f66435;
+    color: #fff;
+}
+
+.mpesa-btn:hover {
+    background-color: #d1522b;
+}
+
+.airtel-btn {
+    background-color: #007fff;
+    color: #fff;
+}
+
+.airtel-btn:hover {
+    background-color: #005cbf;
+}
+
+/* Confirmation popup */
+.copy-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background-color: #3b00db;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+/* Disclaimer */
+.support-disclaimer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 30px;
+}
+
+/* =========================
+   TABLETS ≥768px
+   ========================= */
+@media (min-width: 768px) {
+    .support-options {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .support-card {
+        flex: 1 1 45%;
+    }
+
+    .support-header h2 {
+        font-size: 2.4rem;
+    }
+
+    .support-header p {
+        font-size: 1rem;
+    }
+}
+
+/* =========================
+   DESKTOP ≥1024px
+   ========================= */
+@media (min-width: 1024px) {
+    .support-section {
+        padding: 80px 32px;
+    }
+    .support-card {
+        padding: 28px 32px;
+        border-radius: 12px;
+    }
+    .support-header h2 {
+        font-size: 2.8rem;
+    }
+    .support-header p {
+        font-size: 1.05rem;
+    }
+}
+
+/* =========================
+   CONTACT SECTION
+   Mobile-first
+   ========================= */
+
+.contact-section {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    padding: 60px 16px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+/* Section Header */
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3b00db;
+    margin-bottom: 12px;
+}
+
+.contact-header p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 16px;
+    border: 2px solid #007fff;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f66435;
+    box-shadow: 0 0 8px rgba(246, 100, 53, 0.3);
+}
+
+/* Submit Button */
+.contact-btn {
+    background-color: #f66435;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: #d1522b;
+    transform: translateY(-2px);
+}
+
+/* Social Links */
+.contact-social {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-social .social-link {
+    color: #007fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-social .social-link:hover {
+    color: #f66435;
+}
+
+/* =========================
+   TABLETS ≥768px
+   ========================= */
+@media (min-width: 768px) {
+    .contact-form {
+        gap: 20px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+    .contact-header h2 {
+        font-size: 2.4rem;
+    }
+    .contact-header p {
+        font-size: 1rem;
+    }
+    .contact-social {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* =========================
+   DESKTOP ≥1024px
+   ========================= */
+@media (min-width: 1024px) {
+    .contact-section {
+        padding: 80px 32px;
+    }
+    .contact-header h2 {
+        font-size: 2.8rem;
+    }
+    .contact-header p {
+        font-size: 1.05rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        padding: 14px 18px;
+        font-size: 1.05rem;
+    }
+    .contact-btn {
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* =========================
+   SITE FOOTER (MOBILE)
+   ========================= */
+
+.site-footer {
+    background-color: #3b00db; /* brand primary dark */
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 16px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* stack columns on mobile */
+    gap: 32px;
+    max-width: 1200px;
+    margin: 20px auto 10px;
+}
+
+/* Columns */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* Section Titles */
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #f66435; /* highlights */
+}
+
+/* Lists */
+.footer-links ul,
+.footer-partners ul,
+.footer-legal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-partners li,
+.footer-legal li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-links a,
+.footer-legal a {
+    color: #007fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-legal a:hover {
+    text-decoration: underline;
+}
+
+/* Partner span (affiliate tag) */
+.footer-partners li span {
+    color: #f66435;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    margin-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 16px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #f0f0f0;
+}
+
+
+/* ------- FOOTER SECTION Ends------- */
+
+
+
+
+/* -------- MEDIA QUARIES CONTENT-------- */
+
+/*Tablets and larger phones*/
+@media (min-width: 768px) {
+     body{
+        font-size: 17px;
+      }
+     .header{
+          height: 450px;
+      }       
+     .header .navs{
+        padding: 10px;        
+      }   
+     .header .navs ul li a{
+        font-size: 18px;
+      }
+     .header .navs img{
+        width: 30px;
+      }
+      .header p, h1{
+        max-width: 80%;
+      }
+      .start-learning{
+        bottom: 150px;   
+        padding: 30px 70px;
+        font-size: 28px;
+      }
+      .main .learn{
+       scroll-margin-top: 70px;
+      }
+      .main .web-hosting-in-kenya{
+       scroll-margin-top: 70px;
+        margin: 60px 0;
+      }
+      .main .web-hosting-in-kenya .web-hosting-detailes-paragraph{
+       margin: 15px auto;
+       max-width: 80%;
+       text-align: left;
+       font-size: 19px;
+      }
+      .main .web-hosting-in-kenya table{    
+       border: 2px solid black;
+       border-radius: 15px;
+       padding: 20px 7px;
+       font-size: 26px;
+      }
+      main .web-hosting-in-kenya table th{
+      text-align: left;
+      padding-left: 10px;
+      }
+      .main .web-hosting-in-kenya table p{
+        margin: 0 10px;
+       }
+       .main .web-hosting-in-kenya .hosting-features{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+} 
+      .main .section-one .useful-links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }   
+     .main .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-self: center;
+      }
+     .main .cards .reasons .number{
+        padding: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+      }
+     .main .cards .reasons {
+        width: 95%;
+        margin: 8px;
+      }
+      .main .learn-now{
+        margin: 50px 20px;
+        padding: 60px 15px;
+        border-radius: 30px; 
+      }
+      .main .learn-now h2{
+        margin-bottom: 15px;
+        font-size: 38px;
+      }
+      .main .learn-now button{
+       padding: 15px 30px;
+       font-size: 25px;
+      }
+      .affiliate-link-statement {
+       margin-top: 8px;
+       border-radius: 6px;
+       font-size: 17px;
+       padding: 15px 18px;
+       border-left: 10px solid #3b00db;        
+       color: #555;
+       margin-bottom: 20px;
+      }
+
+      
+      /* =========================
+   FAQ SECTION (TABLETS ≥768px)
+   ========================= */
+@media (min-width: 768px) {
+
+    .faq-section {
+        padding: 70px 24px;
+    }
+
+    .faq-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .faq-title {
+        font-size: 2.2rem;
+    }
+
+    .faq-subtitle {
+        font-size: 1rem;
+        margin-bottom: 40px;
+        line-height: 1.7;
+    }
+
+    .faq-list details {
+        padding: 20px 24px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .faq-list summary {
+        font-size: 1.1rem;
+    }
+
+    .faq-list p {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    .faq-list summary::after {
+        font-size: 1rem;
+    }
+}
+
+
+      
+      /* =========================
+   PARTNERS SECTION (≥768px)
+   Tablets & Small Laptops
+   ========================= */
+
+    .partners-section {
+        padding: 70px 24px;
+    }
+
+    .partners-header {
+        margin-bottom: 48px;
+    }
+
+    .partners-title {
+        font-size: 2.2rem;
+    }
+
+    .partners-subtitle {
+        font-size: 1rem;
+        max-width: 680px;
+    }
+
+    /* Grid becomes 2 columns */
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    /* Card spacing */
+    .partner-card {
+        padding: 26px;
+    }
+
+    .partner-name {
+        font-size: 1.2rem;
+    }
+
+    .partner-description {
+        font-size: 0.95rem;
+    }
+
+    /* Badge refinement */
+    .partner-badge {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    /* Disclaimer */
+    .partners-disclaimer {
+        max-width: 800px;
+        margin: 48px auto 0;
+        text-align: center;
+    }
+
+      
+      
+}
+
+/* =========================
+   SITE FOOTER (TABLETS ≥768px)
+   ========================= */
+@media (min-width: 768px) {
+
+    .footer-container {
+        flex-direction: row;       /* side-by-side columns */
+        flex-wrap: wrap;           /* wrap if needed */
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .footer-column {
+        flex: 1 1 45%;             /* 2 columns per row approx */
+    }
+
+    /* Column spacing */
+    .footer-column + .footer-column {
+        margin-top: 0;
+    }
+
+    /* Typography adjustments */
+    .footer-logo {
+        font-size: 1.8rem;
+    }
+
+    .footer-description {
+        font-size: 1rem;
+    }
+
+    .footer-title {
+        font-size: 1.2rem;
+    }
+
+    .footer-links li,
+    .footer-partners li,
+    .footer-legal li {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+        padding-top: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.85rem;
+    }
+}
+
+/* =========================
+   SITE FOOTER (TABLETS ENDS HERE ≥768px)
+   ========================= */
+
+
+/* Laptops & desktops */
+@media (min-width: 1024px) {      
+      body{
+        font-size: 20px;
+      }
+      .header{
+          height: 500px;
+      }      
+     .header .navs{
+        padding: 15px;        
+      }
+     .header .navs ul li a{
+        font-size: 22px;
+      }
+     .header .navs img{
+        width: 35px;
+      }
+      .header p, h1{
+        max-width: 70%;
+      }
+      .start-learning{
+        bottom: 250px;   
+        padding: 50px 120px;
+        font-size: 34px;
+      }
+       .main .learn{
+       scroll-margin-top: 90px;
+      }
+       .main .web-hosting-in-kenya{
+       scroll-margin-top: 90px;
+        margin: 80px 0;
+      }
+      .main .web-hosting-in-kenya .web-hosting-detailes-paragraph{
+       margin: 20px auto;
+       max-width: 70%;
+       text-align: left;
+       font-size: 22px;
+      }
+      .main .web-hosting-in-kenya table{    
+       border: 3px solid black;
+       border-radius: 20px;
+       padding: 30px 10px;
+       font-size: 30px;
+       }
+       main .web-hosting-in-kenya table th{
+      text-align: left;
+      padding-left: 15px;
+      }
+       .main .web-hosting-in-kenya table p{
+        margin: 0 15px;
+      }
+      .main .web-hosting-in-kenya .hosting-features{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+} 
+      .main .section-one .useful-links{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+      }          
+     .main .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px auto;
+        align-self: center;
+      }
+      .main .cards .reasons .number{
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }     
+     .main .cards .reasons {
+        width: 90%;
+        margin: 10px;
+      }
+      .main .learn-now{
+        margin: 70px 30px;
+        padding: 70px 20px;
+        border-radius: 40px; 
+      }
+      .main .learn-now h2{
+        margin-bottom: 20px;
+        font-size: 44px;
+      }
+      .main .learn-now button{
+       padding: 20px 40px;
+       font-size: 30px;
+      }
+      
+      
+      /* =========================
+   FAQ SECTION (DESKTOP ≥1024px)
+   ========================= */
+@media (min-width: 1024px) {
+
+    .faq-section {
+        padding: 90px 32px;
+    }
+
+    .faq-container {
+        max-width: 900px; /* wider for desktop screens */
+        margin: 0 auto;
+    }
+
+    .faq-title {
+        font-size: 2.6rem;
+    }
+
+    .faq-subtitle {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 50px;
+    }
+
+    .faq-list details {
+        padding: 24px 28px;
+        margin-bottom: 22px;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .faq-list details:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+    }
+
+    .faq-list summary {
+        font-size: 1.2rem;
+    }
+
+    .faq-list p {
+        font-size: 1.05rem;
+        margin-top: 14px;
+        line-height: 1.7;
+    }
+
+    .faq-list summary::after {
+        font-size: 1.1rem;
+    }
+}
+      /* =========================
+   PARTNERS SECTION (≥1024px)
+   Desktop & Large Screens
+   ========================= */
+
+
+    .partners-section {
+        padding: 90px 32px;
+    }
+
+    .partners-header {
+        margin-bottom: 60px;
+    }
+
+    .partners-title {
+        font-size: 2.6rem;
+    }
+
+    .partners-subtitle {
+        font-size: 1.05rem;
+        max-width: 760px;
+    }
+
+    /* Grid becomes 3 columns */
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    /* Card refinement */
+    .partner-card {
+        padding: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .partner-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Card text */
+    .partner-name {
+        font-size: 1.25rem;
+    }
+
+    .partner-description {
+        font-size: 1rem;
+    }
+
+    /* Badge */
+    .partner-badge {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+
+    /* Disclaimer */
+    .partners-disclaimer {
+        max-width: 900px;
+        margin-top: 56px;
+    }
+
+    .disclaimer-text {
+        font-size: 0.85rem;
+    }
+     
+      
+      .affiliate-link-statement {
+       margin-top: 10px;
+       border-radius: 7px;
+       font-size: 20px;
+       padding: 16px 20px;
+       border-left: 12px solid #3b00db;        
+       color: #555;
+       margin-bottom: 30px;
+      }
+              
+}
+
+/* =========================
+   SITE FOOTER (DESKTOP ≥1024px)
+   ========================= */
+@media (min-width: 1024px) {
+
+    .footer-container {
+        flex-direction: row;        /* all columns in a row */
+        flex-wrap: nowrap;          /* prevent wrapping */
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .footer-column {
+        flex: 1 1 22%;             /* 4 columns per row */
+    }
+
+    /* Typography scaling */
+    .footer-logo {
+        font-size: 2rem;
+    }
+
+    .footer-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .footer-title {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+    }
+
+    .footer-links li,
+    .footer-partners li,
+    .footer-legal li {
+        font-size: 1rem;
+        margin-bottom: 14px;
+    }
+
+    /* Links hover effect */
+    .footer-links a:hover,
+    .footer-legal a:hover {
+        color: #f66435;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+    }
+
+    /* Partner affiliate span emphasis */
+    .footer-partners li span {
+        font-size: 0.9rem;
+    }
+
+    /* Bottom bar */
+    .footer-bottom {
+        padding-top: 24px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+}
+
+/* =========================
+   SITE FOOTER (DESKTOP ENDS HERE ≥1024px)
+   ========================= */
