@@ -1,0 +1,79 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.affiliate-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 16px;
+}
+
+/* Header */
+.affiliate-header h1 {
+    font-size: 2rem;
+    color: #3b00db;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Text */
+.affiliate-text p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+/* Links */
+.affiliate-text a {
+    color: #f66435;
+    text-decoration: underline;
+}
+
+.affiliate-text a:hover {
+    color: #007fff;
+}
+
+/* =========================
+   TABLETS ≥768px
+   ========================= */
+@media (min-width: 768px) {
+    .affiliate-container {
+        padding: 60px 24px;
+    }
+
+    .affiliate-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .affiliate-text p {
+        font-size: 1.05rem;
+    }
+}
+
+/* =========================
+   DESKTOP ≥1024px
+   ========================= */
+@media (min-width: 1024px) {
+    .affiliate-container {
+        padding: 80px 32px;
+    }
+
+    .affiliate-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .affiliate-text p {
+        font-size: 1.1rem;
+    }
+}
