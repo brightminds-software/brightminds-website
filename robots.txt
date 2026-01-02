@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /pages/private-policy.html
+Disallow: /pages/terms-and-conditions.html
+Disallow: /pages/affiliate-disclosure.html
+
+Sitemap: https://brightminds-learn.vercel.app/sitemap.xml
