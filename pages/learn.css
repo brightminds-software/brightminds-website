@@ -1,0 +1,39 @@
+/* Google Fonts (Inter)*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset default CSS styles*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 1200px;
+    /* line-height: 1.6; */
+    background: white;
+    font-size: 16px;
+}
+
+/* Ensuring Everything Uses Inter As font*/
+body, h1, h2, h3, h4, h5, h6, p, a, li, button, input, label, textarea, select, option {
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+p{
+    text-align: left;
+    margin: 20px 10px;
+}

@@ -1,0 +1,136 @@
+:root {
+    --orange: #f66435;
+    --purple: #3b00db;
+    --blue: #007fff;
+    --bg: #ffffff;
+    --text: #333;
+    --card: #f4f6fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--blue), var(--purple));
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.hero-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.7rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--orange);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Content */
+.content {
+    max-width: 950px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section h2 {
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+/* Card */
+.card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* Lists */
+.steps,
+.benefits,
+.limitations {
+    list-style: none;
+}
+
+.steps li,
+.benefits li,
+.limitations li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.steps i,
+.benefits i {
+    color: var(--orange);
+}
+
+.limitations i {
+    color: red;
+}
+
+/* Highlight */
+.highlight {
+    border-left: 5px solid var(--orange);
+    padding-left: 20px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    background: var(--card);
+    padding: 50px 25px;
+    border-radius: 12px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: var(--purple);
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3.1rem;
+    }
+}
