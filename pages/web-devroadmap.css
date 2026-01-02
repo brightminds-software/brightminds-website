@@ -1,0 +1,134 @@
+:root {
+    --orange: #f66435;
+    --purple: #3b00db;
+    --blue: #007fff;
+    --bg: #ffffff;
+    --text: #333;
+    --card: #f5f7fc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--purple), var(--blue));
+    color: #fff;
+    padding: 90px 20px;
+}
+
+.hero-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: var(--orange);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Roadmap */
+.roadmap {
+    max-width: 950px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro h2 {
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+/* Stages */
+.stage {
+    margin-bottom: 55px;
+}
+
+.stage h3 {
+    color: var(--blue);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stage ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.stage li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stage i {
+    color: var(--orange);
+}
+
+/* Card */
+.card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 14px;
+}
+
+/* CTA */
+.cta {
+    background: var(--card);
+    padding: 50px 25px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: var(--purple);
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 35px;
+    margin-top: 90px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+}

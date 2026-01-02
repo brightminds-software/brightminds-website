@@ -1,0 +1,174 @@
+/* =========================
+   TERMS & CONDITIONS PAGE
+   Mobile-first
+   ========================= */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Container */
+.tnc-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 16px;
+}
+
+/* Header */
+.tnc-header {
+    background-color: #3b00db;
+    color: #fff;
+    text-align: center;
+    padding: 50px 16px;
+    border-bottom: 4px solid #f66435;
+}
+
+.tnc-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.tnc-header p {
+    font-size: 0.95rem;
+    color: #f0f0f0;
+}
+
+/* Main Content */
+.tnc-main {
+    padding: 40px 0;
+}
+
+/* Sections */
+.tnc-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.tnc-section:nth-child(even) {
+    background-color: #eef3ff;
+}
+
+.tnc-section h2 {
+    font-size: 1.4rem;
+    color: #f66435;
+    margin-bottom: 10px;
+}
+
+.tnc-section p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.tnc-section a {
+    color: #007fff;
+    text-decoration: none;
+}
+
+.tnc-section a:hover {
+    text-decoration: underline;
+    color: #f66435;
+}
+
+/* Footer */
+.tnc-footer {
+    background-color: #3b00db;
+    color: #fff;
+    text-align: center;
+    padding: 32px 16px;
+    border-top: 4px solid #f66435;
+    font-size: 0.85rem;
+}
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
+/* Tablets ≥768px */
+@media (min-width: 768px) {
+    .tnc-container {
+        padding: 0 24px;
+    }
+
+    .tnc-header {
+        padding: 60px 24px;
+    }
+
+    .tnc-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .tnc-header p {
+        font-size: 1rem;
+    }
+
+    .tnc-section {
+        padding: 24px 28px;
+    }
+
+    .tnc-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .tnc-section p {
+        font-size: 1rem;
+    }
+
+    .tnc-footer {
+        padding: 36px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Desktops ≥1024px */
+@media (min-width: 1024px) {
+    .tnc-container {
+        padding: 0 32px;
+    }
+
+    .tnc-header {
+        padding: 80px 32px;
+    }
+
+    .tnc-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .tnc-header p {
+        font-size: 1.1rem;
+    }
+
+    .tnc-section {
+        padding: 28px 32px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .tnc-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .tnc-section p {
+        font-size: 1.05rem;
+    }
+
+    .tnc-footer {
+        padding: 40px 32px;
+        font-size: 0.95rem;
+    }
+}

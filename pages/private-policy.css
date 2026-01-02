@@ -1,0 +1,201 @@
+/* =========================
+   Privacy Policy - Enhanced CSS
+   Mobile-first
+   ========================= */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.7;
+}
+
+/* Container */
+.pp-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 16px;
+}
+
+/* Header */
+.pp-header {
+    background-color: #3b00db;
+    color: #fff;
+    text-align: center;
+    padding: 50px 16px;
+    border-bottom: 4px solid #f66435;
+}
+
+.pp-header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.pp-header p {
+    font-size: 0.95rem;
+    color: #f0f0f0;
+}
+
+/* Main Content */
+.pp-main {
+    padding: 40px 0;
+}
+
+/* Section Styling */
+.pp-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Alternating Backgrounds */
+.pp-section:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.pp-section:nth-child(even) {
+    background-color: #eef3ff;
+}
+
+/* Section Titles */
+.pp-section h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f66435;
+    margin-bottom: 12px;
+}
+
+/* Paragraphs */
+.pp-section p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+/* Lists */
+.pp-section ul {
+    list-style: disc inside;
+    margin-left: 0;
+    margin-bottom: 12px;
+}
+
+.pp-section ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Links */
+.pp-section a {
+    color: #007fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pp-section a:hover {
+    color: #f66435;
+    text-decoration: underline;
+}
+
+/* Footer */
+.pp-footer {
+    background-color: #3b00db;
+    color: #fff;
+    text-align: center;
+    padding: 32px 16px;
+    font-size: 0.85rem;
+    border-top: 4px solid #f66435;
+}
+
+/* Smooth Scroll (if anchor links used) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
+/* Tablets ≥768px */
+@media (min-width: 768px) {
+
+    .pp-container {
+        padding: 0 24px;
+    }
+
+    .pp-header {
+        padding: 60px 24px;
+    }
+
+    .pp-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .pp-header p {
+        font-size: 1rem;
+    }
+
+    .pp-section {
+        padding: 24px 28px;
+    }
+
+    .pp-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .pp-section p, .pp-section ul li {
+        font-size: 1rem;
+    }
+
+    .pp-footer {
+        padding: 36px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Desktops ≥1024px */
+@media (min-width: 1024px) {
+
+    .pp-container {
+        padding: 0 32px;
+    }
+
+    .pp-header {
+        padding: 80px 32px;
+    }
+
+    .pp-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .pp-header p {
+        font-size: 1.1rem;
+    }
+
+    .pp-section {
+        padding: 28px 32px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .pp-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .pp-section p, .pp-section ul li {
+        font-size: 1.05rem;
+    }
+
+    .pp-footer {
+        padding: 40px 32px;
+        font-size: 0.95rem;
+    }
+}
