@@ -396,34 +396,54 @@ main .web-hosting-in-kenya table th{
 }
 
 .main .web-hosting-in-kenya .hosting-features .truehost-get-started-link{
-    background-color: #f66435;/*orangeRed*/;
+    background: linear-gradient(135deg, #f66435, #ff7a45);
     color: white;
-    padding:60px 5px;
-    border-radius: 10px;
+    padding: 60px 20px;
+    border-radius: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    text-align: center;
 }
 
 .main .web-hosting-in-kenya .hosting-features .truehost-get-started-link h1{
-    text-align: center;
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.main .web-hosting-in-kenya .hosting-features .truehost-get-started-link p{
+    max-width: 500px;
+    font-size: 1rem;
+    opacity: 0.95;
+    margin-bottom: 25px;
 }
 
 .main .web-hosting-in-kenya .hosting-features .truehost-get-started-link button {
-    padding: 10px 40px;
-    width: 100%;
-    margin-top: 10px;
+    padding: 12px 50px;
     background-color: white;
-    color: #f66435;/*orangeRed*/
-    font-size: 22px;
+    color: #f66435;
+    font-size: 20px;
     font-weight: 700;
     border: 2px solid white;
     border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.main .web-hosting-in-kenya .hosting-features .truehost-get-started-link button:hover{
+    background-color: #ffe0d6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.main .web-hosting-in-kenya .hosting-features .truehost-get-started-link small{
+    margin-top: 15px;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    }
 /* affiliate link statement styles*/
 .affiliate-link-statement {
     margin-top: 5px;
