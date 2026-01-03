@@ -451,6 +451,10 @@ main .web-hosting-in-kenya table th{
     line-height: 1.5;
 }
 
+.truehost-get-started-link a {
+    text-decoration: none;
+}
+
 .truehost-get-started-link a button {
     padding: 12px 50px;
     background-color: white;
@@ -736,7 +740,22 @@ main .web-hosting-in-kenya table th{
     text-align: center;
 }
 
+.partners-disclaimer a{
+    color:#3b00db ;
+    text-decoration: none;
+}
 
+.partners-disclaimer a:visited{
+    color: #007fff;
+}
+
+
+/* disclaimer added bellow affiliate div*/
+.below-affiliate{
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 32px;
+} 
 
 /* =========================
    SUPPORT US SECTION
