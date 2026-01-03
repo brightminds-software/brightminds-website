@@ -505,19 +505,19 @@ main .web-hosting-in-kenya table th{
 }
 
 /* =========================
-   FAQ SECTION - FIXED RESPONSIVE
+   FAQ SECTION – POLISHED & RESPONSIVE
    ========================= */
 
 .faq-section {
     background-color: #fff;
     color: #000;
     font-family: 'Inter', sans-serif;
-    padding: 50px 16px;
+    padding: 60px 16px;
 }
 
 .faq-container {
     width: 100%;
-    max-width: 100%; /* allow full width on mobile */
+    max-width: 900px; /* nicer reading width on desktop */
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 10px;
@@ -525,7 +525,7 @@ main .web-hosting-in-kenya table th{
 
 /* Section Title */
 .faq-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #3b00db;
     text-align: center;
@@ -535,66 +535,101 @@ main .web-hosting-in-kenya table th{
 .faq-subtitle {
     font-size: 0.95rem;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.7;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 }
 
 /* FAQ List */
 .faq-list details {
-    width: 100%; /* ensure full width */
-    background-color: #f5f7fa;
+    width: 100%;
+    background-color: #f6f8fc;
     border-left: 4px solid #007fff;
-    border-radius: 8px;
-    padding: 16px 18px;
-    margin-bottom: 16px;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
     box-sizing: border-box;
 }
 
-.faq-list details[open] {
-    border-left-color: #f66435;
+/* Hover (desktop polish) */
+.faq-list details:hover {
     background-color: #eef3ff;
 }
 
+/* Open state */
+.faq-list details[open] {
+    border-left-color: #f66435;
+    background-color: #eef3ff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* Question row */
 .faq-list summary {
     font-weight: 600;
     font-size: 1rem;
-    color: #000;
+    color: #111;
     list-style: none;
     outline: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 }
 
+/* Remove default arrow */
 .faq-list summary::-webkit-details-marker {
-    display: none; /* remove default arrow */
+    display: none;
 }
 
 /* Custom arrow */
 .faq-list summary::after {
-    content: "▸";
-    transition: transform 0.3s ease;
+    content: "›";
+    font-size: 1.4rem;
+    color: #007fff;
+    transition: transform 0.25s ease, color 0.25s ease;
 }
 
+/* Arrow rotate */
 .faq-list details[open] summary::after {
     transform: rotate(90deg);
+    color: #f66435;
 }
 
 /* Answer content */
 .faq-list p {
-    margin-top: 10px;
-    font-size: 0.9rem;
+    margin-top: 12px;
+    font-size: 0.95rem;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
+    animation: fadeIn 0.3s ease;
 }
 
-/* MOBILE-FIRST media query adjustments */
+/* Smooth content appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Focus accessibility */
+.faq-list summary:focus-visible {
+    outline: 2px dashed #007fff;
+    outline-offset: 4px;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
 @media (max-width: 480px) {
     .faq-section {
-        padding: 40px 12px;
+        padding: 45px 12px;
     }
 
     .faq-title {
@@ -610,7 +645,24 @@ main .web-hosting-in-kenya table th{
     }
 
     .faq-list p {
-        font-size: 0.85rem;
+        font-size: 0.88rem;
+    }
+}
+
+/* =========================
+   DESKTOP REFINEMENT
+   ========================= */
+@media (min-width: 768px) {
+    .faq-title {
+        font-size: 2.2rem;
+    }
+
+    .faq-subtitle {
+        font-size: 1rem;
+    }
+
+    .faq-list details {
+        padding: 20px 24px;
     }
 }
 
